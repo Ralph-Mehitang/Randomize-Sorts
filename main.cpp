@@ -3,7 +3,7 @@
 #include <ctime>
 using namespace std;
 
-
+//generates randomly shuffled array
 void shuffle(int n){
 int arr[n];
 srand((unsigned)time(0));
