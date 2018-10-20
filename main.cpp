@@ -29,6 +29,5 @@ cout<<"how big do you want the array to be?"<<endl;
 cin>>n;
 shuffle(n);
 printarr(n);
-
 	return 0;
 }
