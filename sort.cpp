@@ -106,11 +106,21 @@ quicksort(arr,pivot+1,end);
 //generates randomly shuffled array
 int * shuffle(int n){
 int * arr=new int [n];
-//srand((unsigned)time(0));
-for (int i = 1; i <n; i++)
+srand((unsigned)time(0));
+//generates original 1 to n array
+for (int i = 0; i <n; i++)
 {
-	arr[i]=i;
+	arr[i]=i+1;
 }
+//shuffle picks a random index j that is inbetween 1 to i and swaps until i hits 0
+for (int i = n-1; i > 0; i--)
+{
+int j=rand() %(i+1);
+swap(arr[i],arr[j]);
+}
+
+
+//random_shuffle(arr[0],arr[n+1]);
 return arr;
 }
 
