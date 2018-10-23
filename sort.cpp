@@ -1,5 +1,6 @@
 #include <iostream>
 #include <stdlib.h>
+#include <ctime>
 using namespace std;
 // different sorting algorithms
 
@@ -18,13 +19,13 @@ void printarr(int *arr, int size)
 		for (i=0; i < size; i++)
 			cout<<(arr[i])<<" ";
 	}
-void merge (int *arr, int left, int mid, int right){ //subroutine of merge operation that combines lengths m+n
+void merge (int *arr, int left, int mid, int right){ //subroutin- e of merge operation that combines lengths m+n
 int *temp=new int [right-left+1]; // creation of temporary merge array
 int i=left; //left hand of array
 int j=mid+1; // right hand of array
-int k=0; // for the temporary array
+int k=0; // for the temporary array`
 while (i<=mid && j<=right){
-	if(arr[i]<=arr[j])
+	if(arr[i]<=arr[j])`
 		temp[k++] = arr[i++];
 	else 
 		temp[k++] = arr[j++];
@@ -49,7 +50,7 @@ void mergesort(int *arr, int left, int right)// merge sort function
 {
 int mid;
 if(left<right){
-	mid=(left+right)>>1;
+	mid=(left+right);
 	mergesort(arr,left,mid);//first half of the array sort
 	mergesort(arr,mid+1,right); //second half sort
 	merge(arr,left,mid,right); //merges the two arrays back together
@@ -75,7 +76,7 @@ int randomizedpartition(int *arr,int low,int high){
 	//generates a random number that is between low to high
 	srand(time(NULL));
 	int random=low +rand() %(high-low);
-	//then swaps the random value with the high value
+	//then swaps the random value with the high value`
 	swap(arr[random], arr[high]);
 	return partition(arr,low,high);
 }
@@ -85,8 +86,10 @@ int pivot; //partitioning index
 if (start<end)
 {
 pivot=partition(arr,start,end);
+//pivot=randomizedpartition(arr,start,end);
 quicksort(arr,start,pivot-1);	
 quicksort(arr,pivot+1,end);
+
 }
 }
 

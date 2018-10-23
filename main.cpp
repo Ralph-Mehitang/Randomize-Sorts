@@ -1,6 +1,7 @@
 #include <iostream>
 #include <cstdlib>
 #include <ctime>
+#include "sort.cpp"
 using namespace std;
 
 //generates randomly shuffled array
@@ -30,4 +31,6 @@ cin>>n;
 shuffle(n);
 printarr(n);
 	return 0;
+
+
 }
