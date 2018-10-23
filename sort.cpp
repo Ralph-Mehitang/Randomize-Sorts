@@ -25,7 +25,7 @@ int i=left; //left hand of array
 int j=mid+1; // right hand of array
 int k=0; // for the temporary array`
 while (i<=mid && j<=right){
-	if(arr[i]<=arr[j])`
+	if(arr[i]<=arr[j])
 		temp[k++] = arr[i++];
 	else 
 		temp[k++] = arr[j++];
@@ -46,11 +46,11 @@ delete []temp; // free up to avoid any mem leaks
 
 
 
-void mergesort(int *arr, int left, int right)// merge sort function
+size_t mergesort(int *arr, int left, int right)// merge sort function
 {
 int mid;
 if(left<right){
-	mid=(left+right);
+	mid=(left+right)/2;
 	mergesort(arr,left,mid);//first half of the array sort
 	mergesort(arr,mid+1,right); //second half sort
 	merge(arr,left,mid,right); //merges the two arrays back together
@@ -68,7 +68,7 @@ for (int i = start; i <= end-1; i++)
 		swap(arr[index],arr[i]);  //swaps the smaller element and larger element
 	}
 }
-
+swap(arr[index+1],arr[end]);
 	return (index+1);
 }
 
@@ -81,7 +81,7 @@ int randomizedpartition(int *arr,int low,int high){
 	return partition(arr,low,high);
 }
 // quick sort function 
-void quicksort(int *arr, int start, int end){
+size_t quicksort(int *arr, int start, int end){
 int pivot; //partitioning index
 if (start<end)
 {
@@ -92,4 +92,69 @@ quicksort(arr,pivot+1,end);
 
 }
 }
+size_t randomquicsort(int *arr, int start, int end){
+int pivot; //partitioning index
+if (start<end)
+{
+pivot=randomizedpartition(arr,start,end);
+//pivot=randomizedpartition(arr,start,end);
+quicksort(arr,start,pivot-1);	
+quicksort(arr,pivot+1,end);
 
+}
+}
+//generates randomly shuffled array
+int * shuffle(int n){
+int * arr=new int [n];
+//srand((unsigned)time(0));
+for (int i = 1; i <n; i++)
+{
+	arr[i]=i;
+}
+return arr;
+}
+
+
+void maxheapify(int arr[],int n, int i){
+int largenode=i; // sets largenode as root node
+int l=2*i+1; //sets left node
+int r=2*i+2; //sets right node
+//if left child is greater than root
+if(l<n && arr[l]>arr[largenode]){
+	largenode=l;
+}
+//if right child is greater than the root
+if (r<n && arr[r]>arr[largenode])
+{
+	largenode=r;
+}
+//swap and continue heapifying if largenode is not the root
+if (largenode != i)
+{
+	swap(arr[i],arr[largenode]);
+	//recursively heapify the affected subtree.
+	maxheapify(arr,n,largenode);
+}
+
+
+}
+//build maxheap
+void buildmaxheap(int arr[],int n){
+
+	for (int i = (n / 2)-1; i >= 0; i--)
+    maxheapify(arr,n,i);
+
+}
+//heapsort
+size_t heapsort(int arr[], int n){
+buildmaxheap(arr,n); // call buildmaxheap
+//heapsort algorithm
+for (int k = n-1; k >=0;k--)
+{	
+swap(arr[0],arr[k]);
+//heapify root element to get highest element
+maxheapify(arr,k,0);
+
+}
+
+}
