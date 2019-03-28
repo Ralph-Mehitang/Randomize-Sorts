@@ -1,0 +1,151 @@
+rmehitang@Ralph:/mnt/c/Users/ralph/Desktop/cosc-320/lab6$ make
+g++ -std=c++17 main.cpp
+rmehitang@Ralph:/mnt/c/Users/ralph/Desktop/cosc-320/lab6$ ./a.out
+how big do you want the array to be?
+1000000
+Do you want to print original unsorted array?: (y or n)n
+
+Which Sort would you like to use? 1 for quicksort , 2 for randomizedquicksort, 3 for mergesort and 4 for heapsort
+1
+input 1 for array print and time, or input 2 for just the time
+2
+time
+finished at Tue Oct 23 11:59:48 2018
+elapsed time: 0.245074s
+rmehitang@Ralph:/mnt/c/Users/ralph/Desktop/cosc-320/lab6$ ./a.out
+how big do you want the array to be?
+60000
+Do you want to print original unsorted array?: (y or n)n
+
+Which Sort would you like to use? 1 for quicksort , 2 for randomizedquicksort, 3 for mergesort and 4 for heapsort
+1
+input 1 for array print and time, or input 2 for just the time
+2
+time
+finished at Tue Oct 23 12:00:04 2018
+elapsed time: 0.024624s
+rmehitang@Ralph:/mnt/c/Users/ralph/Desktop/cosc-320/lab6$ ./a.out
+how big do you want the array to be?
+110000
+Do you want to print original unsorted array?: (y or n)n
+
+Which Sort would you like to use? 1 for quicksort , 2 for randomizedquicksort, 3 for mergesort and 4 for heapsort
+1
+input 1 for array print and time, or input 2 for just the time
+2
+time
+finished at Tue Oct 23 12:00:12 2018
+elapsed time: 0.0498051s
+rmehitang@Ralph:/mnt/c/Users/ralph/Desktop/cosc-320/lab6$ ./a.out
+how big do you want the array to be?
+10000
+Do you want to print original unsorted array?: (y or n)n
+
+Which Sort would you like to use? 1 for quicksort , 2 for randomizedquicksort, 3 for mergesort and 4 for heapsort
+2
+input 1 for array print and time, or input 2 for just the time
+2
+time
+finished at Tue Oct 23 12:00:21 2018
+elapsed time: 0.0036549s
+rmehitang@Ralph:/mnt/c/Users/ralph/Desktop/cosc-320/lab6$ ./a.out
+how big do you want the array to be?
+100000
+Do you want to print original unsorted array?: (y or n)n
+
+Which Sort would you like to use? 1 for quicksort , 2 for randomizedquicksort, 3 for mergesort and 4 for heapsort
+2
+input 1 for array print and time, or input 2 for just the time
+2
+time
+finished at Tue Oct 23 12:00:35 2018
+elapsed time: 0.0440508s
+rmehitang@Ralph:/mnt/c/Users/ralph/Desktop/cosc-320/lab6$ ./a.out
+how big do you want the array to be?
+150000
+Do you want to print original unsorted array?: (y or n)n
+
+Which Sort would you like to use? 1 for quicksort , 2 for randomizedquicksort, 3 for mergesort and 4 for heapsort
+2
+input 1 for array print and time, or input 2 for just the time
+2
+time
+finished at Tue Oct 23 12:00:45 2018
+elapsed time: 0.0656372s
+rmehitang@Ralph:/mnt/c/Users/ralph/Desktop/cosc-320/lab6$ ./a.out
+how big do you want the array to be?
+10000
+Do you want to print original unsorted array?: (y or n)n
+
+Which Sort would you like to use? 1 for quicksort , 2 for randomizedquicksort, 3 for mergesort and 4 for heapsort
+3
+input 1 for array print and time, or input 2 for just the time
+2
+time
+finished at Tue Oct 23 12:00:57 2018
+elapsed time: 0.0027056s
+rmehitang@Ralph:/mnt/c/Users/ralph/Desktop/cosc-320/lab6$ ./a.out
+how big do you want the array to be?
+600000
+Do you want to print original unsorted array?: (y or n)n
+
+Which Sort would you like to use? 1 for quicksort , 2 for randomizedquicksort, 3 for mergesort and 4 for heapsort
+3
+input 1 for array print and time, or input 2 for just the time
+2
+time
+finished at Tue Oct 23 12:01:14 2018
+elapsed time: 0.277147s
+rmehitang@Ralph:/mnt/c/Users/ralph/Desktop/cosc-320/lab6$ ./a.out
+how big do you want the array to be?
+780000
+Do you want to print original unsorted array?: (y or n)n
+
+Which Sort would you like to use? 1 for quicksort , 2 for randomizedquicksort, 3 for mergesort and 4 for heapsort
+3
+input 1 for array print and time, or input 2 for just the time
+2
+time
+finished at Tue Oct 23 12:01:29 2018
+elapsed time: 0.358369s
+rmehitang@Ralph:/mnt/c/Users/ralph/Desktop/cosc-320/lab6$ ./a.out
+how big do you want the array to be?
+50000
+Do you want to print original unsorted array?: (y or n)n
+
+Which Sort would you like to use? 1 for quicksort , 2 for randomizedquicksort, 3 for mergesort and 4 for heapsort
+4
+input 1 for array print and time, or input 2 for just the time
+2
+time
+finished at Tue Oct 23 12:01:45 2018
+elapsed time: 0.0332981s
+rmehitang@Ralph:/mnt/c/Users/ralph/Desktop/cosc-320/lab6$ ./a.out
+how big do you want the array to be?
+250000
+\Do you want to print original unsorted array?: (y or n)
+wrong input
+rmehitang@Ralph:/mnt/c/Users/ralph/Desktop/cosc-320/lab6$ ./a.out
+how big do you want the array to be?
+500000
+Do you want to print original unsorted array?: (y or n)n
+
+Which Sort would you like to use? 1 for quicksort , 2 for randomizedquicksort, 3 for mergesort and 4 for heapsort
+4
+input 1 for array print and time, or input 2 for just the time
+2
+time
+finished at Tue Oct 23 12:02:04 2018
+elapsed time: 0.476876s
+rmehitang@Ralph:/mnt/c/Users/ralph/Desktop/cosc-320/lab6$ ./a.out
+how big do you want the array to be?
+1000000
+Do you want to print original unsorted array?: (y or n)n
+
+Which Sort would you like to use? 1 for quicksort , 2 for randomizedquicksort, 3 for mergesort and 4 for heapsort
+4
+input 1 for array print and time, or input 2 for just the time
+2
+time
+finished at Tue Oct 23 12:02:19 2018
+elapsed time: 1.01387s

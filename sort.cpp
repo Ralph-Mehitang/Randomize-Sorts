@@ -27,7 +27,7 @@ int k=0; // for the temporary array`
 while (i<=mid && j<=right){
 	if(arr[i]<=arr[j])
 		temp[k++] = arr[i++];
-	else 
+	else
 		temp[k++] = arr[j++];
 }
 //left hand
@@ -37,7 +37,7 @@ while (i<= mid)
 while (j<=right)
 	temp[k++] = arr[j++];
 // copies the temporary array that has been merged into the original array.
-for (k = 0, i=left;i<=right; ++i, ++k)	
+for (k = 0, i=left;i<=right; ++i, ++k)
 {
 	arr[i]=temp[k];
 }
@@ -58,7 +58,7 @@ if(left<right){
 }
 
 int partition(int *arr, int start, int end){
-int pivot=arr[end];  //sets the pivot 
+int pivot=arr[end];  //sets the pivot
 int index=(start-1);   //the index of the smaller element
 for (int i = start; i <= end-1; i++)
 {
@@ -80,14 +80,14 @@ int randomizedpartition(int *arr,int low,int high){
 	swap(arr[random], arr[high]);
 	return partition(arr,low,high);
 }
-// quick sort function 
+// quick sort function
 size_t quicksort(int *arr, int start, int end){
 int pivot; //partitioning index
 if (start<end)
 {
 pivot=partition(arr,start,end);
 //pivot=randomizedpartition(arr,start,end);
-quicksort(arr,start,pivot-1);	
+quicksort(arr,start,pivot-1);
 quicksort(arr,pivot+1,end);
 
 }
@@ -98,7 +98,7 @@ if (start<end)
 {
 pivot=randomizedpartition(arr,start,end);
 //pivot=randomizedpartition(arr,start,end);
-quicksort(arr,start,pivot-1);	
+quicksort(arr,start,pivot-1);
 quicksort(arr,pivot+1,end);
 
 }
@@ -119,8 +119,6 @@ int j=rand() %(i+1);
 swap(arr[i],arr[j]);
 }
 
-
-//random_shuffle(arr[0],arr[n+1]);
 return arr;
 }
 
@@ -146,7 +144,6 @@ if (largenode != i)
 	maxheapify(arr,n,largenode);
 }
 
-
 }
 //build maxheap
 void buildmaxheap(int arr[],int n){
@@ -160,11 +157,10 @@ size_t heapsort(int arr[], int n){
 buildmaxheap(arr,n); // call buildmaxheap
 //heapsort algorithm
 for (int k = n-1; k >=0;k--)
-{	
+{
 swap(arr[0],arr[k]);
 //heapify root element to get highest element
 maxheapify(arr,k,0);
 
 }
-
 }
